@@ -105,4 +105,9 @@ public class OkhttpUtil {
             }
         });
     }
+    public void setcancle(){
+        if (okhttp!=null){
+            okhttp.dispatcher().cancelAll();
+        }
+    }
 }

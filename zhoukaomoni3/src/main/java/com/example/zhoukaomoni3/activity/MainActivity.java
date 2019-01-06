@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity{
         bottomTabBar.init(getSupportFragmentManager())
                 .addTabItem("首页",R.drawable.home,HomeFragment.class)
                 .addTabItem("分类",R.drawable.assor,AssorFragment.class);
-
     }
     /**
      * 操作数据的方法

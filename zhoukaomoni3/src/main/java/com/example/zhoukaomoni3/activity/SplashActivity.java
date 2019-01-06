@@ -27,9 +27,6 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        //创建一个属性动画
-        DisplayMetrics dm = new DisplayMetrics();
-        int widthPixels = dm.widthPixels;
         //平移
         ObjectAnimator translationY = new ObjectAnimator().ofFloat(iv,"translationY",0,500);
         //旋转

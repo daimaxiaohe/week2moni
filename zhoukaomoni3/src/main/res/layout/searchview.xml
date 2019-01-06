@@ -34,6 +34,7 @@
         android:layout_height="0dp"
         android:paddingLeft="32dp"
         android:layout_marginLeft="5dp"
+        android:hint="搜索"
         app:layout_constraintTop_toTopOf="@+id/qr"
         android:background="@drawable/searchround"
         app:layout_constraintBottom_toBottomOf="@id/qr"

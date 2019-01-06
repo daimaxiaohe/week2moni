@@ -4,6 +4,7 @@ import com.example.zhoukaomoni3.bean.AssorBean;
 import com.example.zhoukaomoni3.bean.HomeBean;
 import com.example.zhoukaomoni3.contract.Contract;
 import com.example.zhoukaomoni3.model.ProductModel;
+import com.example.zhoukaomoni3.utils.OkhttpUtil;
 import com.example.zhoukaomoni3.utils.RequestCallBack;
 import com.google.gson.Gson;
 
@@ -65,5 +66,15 @@ public class ProductPresenter extends Contract.CPresenter {
                 }
             }
         });
+    }
+
+    /**
+     * 解除view层的引用
+     */
+    public void setcancle(){
+        if (view!=null){
+            view=null;
+            OkhttpUtil.getMinstance().setcancle();
+        }
     }
 }

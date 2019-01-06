@@ -122,5 +122,15 @@ public class AssorFragment extends Fragment implements Contract.IView{
             rightAdapter.setlist(list);
         }
     }
-
+    /**
+     * 防止内存泄漏
+     */
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (productPresenter!=null){
+            productPresenter.setcancle();
+            productPresenter=null;
+        }
+    }
 }
